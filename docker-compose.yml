@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  app1:
+    build: ./app1
+    volumes:
+      - ./app1:/var/www/html
+    ports:
+      - '90:80'
+  app2:
+    build: ./app2
+    volumes:
+      - ./app2:/var/www/html
+    ports:
+      - '91:80'
